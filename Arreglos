@@ -1,0 +1,32 @@
+using System;
+using System.Linq;
+
+namespace Clase_5;
+
+public static class Program
+{
+	public static void Main()
+	{
+double[] numero= new double[10];
+numero[0] = 21;
+numero[1] = 23;
+numero[2] = 25;
+numero[3] = 27;
+numero[4] = 29;
+numero[5] = 31;
+numero[6] = 33;
+numero[7] = 34;
+numero[8] = 35;
+numero[9] = 37;
+
+if(numero[0]==21){
+Console.WriteLine("Datos del arreglo");
+Console.WriteLine();
+for(int x=0; x<10; x++){
+	
+Console.WriteLine("posicion: "+x+" numero: "+numero[x]);
+}
+}
+Console.ReadKey();
+	}
+}

@@ -20,7 +20,7 @@ numero[8] = 35;
 numero[9] = 37;
 
 if(numero[0]==21){
-Console.WriteLine("Datos del arreglo");
+Console.WriteLine("Todos lo datos del arreglo");
 Console.WriteLine();
 for(int x=0; x<10; x++){
 	

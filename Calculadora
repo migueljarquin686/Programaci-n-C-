@@ -1,0 +1,71 @@
+using System;
+using System.Linq;
+using CSharpShellCore;
+
+namespace Clase_4;
+
+public static class Program
+{
+	public static void Main()
+	{
+/*
+ESTE PROGRAMA FUNCIONA COMO UNA 
+CALCULADORA EN DONDE EVALUA DOS 
+NUMEROS Y EN FUNCION DE ESO SE
+PUEDE EFECTUAR LAS CUATRO 
+OPERACIONES BASICAS SEGUN DESEE 
+EL USUARIO
+*/
+
+double a,b,c;
+int menu;
+
+Console.WriteLine("ingrese el primer numero");
+a=double.Parse(Console.ReadLine());
+Console.WriteLine("ingrese el segundo numero");
+b=double.Parse(Console.ReadLine());
+
+Console.WriteLine("MENU DE OPCIONES");
+Console.WriteLine("1.Sumar");
+Console.WriteLine("2.restar");
+Console.WriteLine("3.multiplicar");
+Console.WriteLine("4.dividir");
+Console.WriteLine("ingrese una opcion");
+menu=int.Parse(Console.ReadLine());
+
+if(a>0&&b>0){ //Este if tiene adentro un switch
+switch(menu){
+	
+case 1:
+c=a+b;
+Console.WriteLine("La suma es: "+c);
+break;
+
+case 2:
+c=a-b;
+Console.WriteLine("La resta es: "+c);
+break;
+
+case 3:
+c=a*b;
+Console.WriteLine("La multiplicacion es: "+c);
+break;
+
+case 4:
+c=a/b;
+Console.WriteLine("La division es: "+c);
+break;
+
+default:
+Console.WriteLine("Esta opcion no esta registrada");
+break;
+}
+}
+
+else{
+Console.WriteLine("Los numeros deben ser positivos");
+}
+
+Console.ReadKey();//Esperar tecla
+	}
+}
